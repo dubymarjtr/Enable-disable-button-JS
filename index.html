@@ -11,12 +11,41 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <!-- TODO: Update '<title>'. Whatever you add for 'h1' should be mentioned here. 🔍-->
-    <title>Frontend Starter</title>
+    <title>Registration Form</title>
   </head>
   <body>
-    <!-- TODO: Update 'h1' -->
-    <h1>Frontend Starter</h1>
     <script src="./scripts.js" type="module"></script>
+    <div class="flex flex--column center--block justify--center">
+      <h1>Register Here</h1>
+      <!-- div for the entire form including text on top-->
+      <div class="flex flex--column center--block container">
+        <div class="flex justify--center">
+          <h2>Enter your information below</h2>
+        </div>
+
+        <form action="" class="flex flex--column">
+          <label for="name" class="screen-reader-text">Full Name:</label>
+          <input placeholder="Full Name" type="text" id="name" required />
+
+          <label for="email" class="screen-reader-text">Email:</label>
+          <input placeholder="Email" type="email" id="email" required />
+
+          <label for="address" class="screen-reader-text">Address:</label>
+          <input placeholder="Address" type="text" id="address" required />
+
+          <label for="terms" class="screen-reader-text"
+            >Terms and Conditions:</label
+          >
+          <input
+            placeholder="Do you accept our Terms and Conditions?"
+            type="text"
+            id="terms"
+          />
+
+          <button type="submit" disabled>Submit</button>
+          <button type="reset" class="reset">Reset</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

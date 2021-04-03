@@ -1,1 +1,75 @@
+:root {
+  --medium-gap: 8px;
+  --primary-color: #59575c;
+  --input-color: #8b898e;
+  --font-color: #d3fbd8;
+  --submit-button: #00c2f9;
+  --reset-button: #01829b;
+}
 
+/* From W3School.com */
+::placeholder {
+  color: var(--font-color);
+  opacity: 0.5;
+}
+.container {
+  background-color: var(--primary-color);
+  border: var(--primary-color) solid 1px;
+  border-radius: 5px;
+  color: var(--font-color);
+  padding-bottom: 15px;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 20px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--medium-gap);
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.center--block {
+  margin: 0 auto;
+  width: 550px;
+}
+
+.justify--center {
+  justify-content: center;
+}
+
+input {
+  background-color: var(--input-color);
+  border: none;
+  border-radius: 5px;
+  margin: 5px 20px;
+  padding: 10px;
+}
+
+button {
+  background-color: var(--submit-button);
+  border-radius: 5px;
+  margin: 5px 10px;
+  margin: 5px 20px;
+  padding: 10px;
+}
+
+.reset {
+  background-color: var(--reset-button);
+}
+
+div div {
+  border-bottom: #d3fbd8 solid 1px;
+}
+
+/* CSS Tricks */
+.screen-reader-text {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
